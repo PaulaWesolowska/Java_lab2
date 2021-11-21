@@ -9,6 +9,14 @@ public class Main {
           to dać komunikat "liczba XX podzielna przez YY" (XX-liczba podzielna YY-podzielnik)
         */
 
+        int i = 1000;
+        int indexNumber = 56694;
+        do{ --i;
+            if( i % 94 == 0){
+                System.out.println("Liczba "+ i +" jest podzielna przez 94");
+            }
+        } while( i >= 0);
+
 
         /* zad 2
         a) stworzyć tablicę typu int wielkosci 5, przypisac jej dowolne wartości,
@@ -21,7 +29,13 @@ public class Main {
         a) sprawdzić jak zachowuje się pętla while gdy w jej warunku damy true --> while(true)
         b) a jak gdy damy false --> while(false)
         */
-
-
+        boolean a = true;
+        boolean b = false;
+        while(a){
+            System.out.println("Sprawdzam rezultat while (true) -> pętla się nie kończy");
+}
+        while(b){
+            System.out.println("Sprawdzam rezultat while (false) -> wynik nie pokazuje się w ogóle");
+        }
     }
 }
